@@ -1,0 +1,5 @@
+
+html, body, ul{
+    scroll-behavior: smooth;
+    font-family: 'Open Sans', sans-serif;
+}
