@@ -1,5 +1,218 @@
+@import url(chat.css);
+
 
 html, body, ul{
+    margin: 0;
+    padding: 0;
     scroll-behavior: smooth;
     font-family: 'Open Sans', sans-serif; 
+}
+
+ul{
+    list-style: none;
+}
+ 
+.container{
+    height: 100vh; /*100% do tamanho da tela*/
+    position: relative;
+}
+
+/* sidebar */
+
+.sidebar{
+    width: 410px;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+}
+
+/* toolbar */
+
+.toolbar-container{
+    width: 100%;
+    height: 60px;
+    background-color: #EEE;
+}
+
+.user-photo{
+    width: 40px;
+    border-radius: 50%;
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    background-color: #ccc;
+}
+
+.aux-icons-toolbar-container{
+    float: right;
+    height: 60px;
+    line-height: 60px;
+    padding-right: 20px;
+
+}
+
+.aux-icons-toolbar-container i{
+    color: #80868a;
+    font-size: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    cursor: pointer; 
+}
+
+/* conteudo das notificações */
+
+.notification-container{
+    width: 100%;
+    height: 90px;
+    padding-top: 23px;
+    padding-left: 80px;
+    background-color: #9de1fe;
+    color: #384c56;
+    position: relative;
+    box-sizing: border-box; /* para os elementos nao ficarem maiores que o fim da borda */ 
+}
+
+.fas.fa-bell-slash{
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 50%;
+    font-size: 18px;
+    color: #9de1fe;
+    background-color: #f5fcff;
+    position: absolute;
+    top: 20px;
+    left: 15px;  
+}
+
+.notification-container p{
+    margin: 0;
+}
+
+.notification-container .receive-notification{
+    font-size: 15px;
+    margin-bottom: 3px;
+}
+
+.activate-notification{
+    font-size: 13px;
+}
+
+/* conteudo de pesquisa */
+
+.search-container{
+    height: 50px;
+    width: 100%;
+    padding-left: 7.5px;
+    padding-top: 7.5px;
+    background-color: #f8f8f8;
+    position: relative;
+    color: #bdc1c3;
+    box-sizing: border-box; 
+}
+
+#contact-search{
+    position: absolute;
+    left: 30px;
+    top: 18px;
+    font-size: 14px;
+}
+
+#search{
+    border: none;
+    height: 35px;
+    width: 385px; 
+    padding-left: 60px;
+    border-radius: 17.5px;
+    background-color: #FFF;
+    box-sizing: border-box;
+}
+
+#search::placeholder{
+    color: #bdc1c3;
+}
+
+/* conteudo dos contatos */
+
+.contacts-container{
+    height: auto;
+    background-color: #FFF;
+}
+
+.contact-box{
+    cursor: pointer;
+    height: 72px;
+    background-color: #FFF;
+    border-top: 1px solid #f2f2f2;
+    position: relative;
+    box-sizing: border-box; 
+}
+
+.contact-box:last-child{
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.contact-box:hover{
+    background-color: #e9ebeb;
+}
+
+.active-chat.contact-box:hover{
+    background-color: #e9ebeb;
+}
+
+.contact-box .user-photo{
+    width: 50px;
+}
+
+.user-info{
+    margin-left: 80px;
+    padding-top: 10px;
+    display: inline-block;
+}
+
+.user-info p, .message-info p{
+    margin: 0;
+}
+
+.user-name{
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 12px; 
+}
+
+.user-messagepreview{
+    font-size: 14px;
+    color: #454545;
+}
+
+.fa-check-double{
+    margin-right: 5px;
+    color: #4fc3f7;
+} 
+
+.message-info {
+	position: absolute;
+	top: 12px;
+	right: 20px;
+	display: inline-block;
+}
+
+.message-info .message-time {
+	font-size: 12px;
+	margin-bottom: 5px;
+	color: #CCC;
+}
+
+.message-pending {
+	background-color: #09d261;
+	color: #FFF;
+	width: 19px;
+	height: 19px;
+	line-height: 19px;
+	font-size: 12px;
+	font-weight: bold;
+	border-radius: 50%;
+	text-align: center;
+	float: right;
 }

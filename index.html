@@ -35,58 +35,65 @@
                 <input type="text" name="search" id="search" placeholder="Procurar ou começar uma nova conversa">
             </div>
             <div class="contacts-container">
-                <div class="contact-box" active-chat>
+                <div class="contact-box active-chat">
                     <img class="user-photo" src="img/avatar2.png">
-                    <p class="user-name">Manoela Souza</p>
-                    <p class="user-messagepreview"><i class="fas fa-check-double"></i>
-                        Oi, tudo bem?</p>
+                    <div class="user-info">
+                        <p class="user-name">Manoela Souza</p>
+                        <p class="user-messagepreview"><i class="fas fa-check-double"></i>Oi, tudo bem?</p>
+                    </div>
+                    <div class="message-info">
+                        <p class="message-time">22:43</p>
+                    </div>
                 </div>
-                <div class="mensage-info">
-                    <p class="message-time">22:36</p>
+                <div class="contact-box">
+                    <img class="user-photo" src="img/avatar3.png">
+                    <div class="user-info">
+                        <p class="user-name">João Paulo</p>
+                        <p class="user-messagepreview">Está disponível para um freela?</p>
+                    </div>
+                    <div class="message-info">
+                        <p class="message-time">12:31</p>
+                        <p class="message-pending">3</p>
+                    </div>
                 </div>
-                <img class="user-photo" src="img/avatar3.png"> 
-                <p class="user-name">João Paulo</p>
-                <p class="user-messagepreview">Está disponivel para um freela?</p>
+                <div class="contact-box">
+                    <img class="user-photo" src="img/avatar4.png">
+                    <div class="user-info">
+                        <p class="user-name">Maria da Silva</p>
+                        <p class="user-messagepreview">O projeto ficou perfeito, obrigada!</p>
+                    </div>
+                    <div class="message-info">
+                        <p class="message-time">08:23</p>
+                        <p class="message-pending">5</p>
+                    </div>
+                </div>
             </div>
-            <div class="mensage-info">
-                <p class="message-time">12:32</p>
-                <p class="message-pending">3</p>
-            </div>
-            <img class="user-photo" src="img/avatar4.png">
-            <p class="user-name">Maria Eduarda</p>
-            <p class="user-messagepreview">O projeto ficou incrível, obrigada!</p>
-    </div>
-    <div class="mensage-info">
-        <p class="message-time">7:46</p>
-        <p class="message-pending">5</p>
-    </div>
-    </div>
-    </aside>
-    <main class="chat-container">
-        <nav class="chat-navbar">
-            <div class="contactinfo-container">
-                <img class="user-photo" src="img/avatar2.png">
-                <p class="user-name">Manoela Souza</p>
-            </div>
-            <ul class="chattools-container">
-                <li><i class="fas fa-search"></i></li>
-                <li><i class="fas fa-fa-paperclip"></i></li>
-                <li><i class="fas fa-ellipsis-v"></i></li>
-            </ul>
-        </nav>
-        <div class="messages-container">
-            <div class="bg-image"></div>
-            <div class="chat-messages">
-                <p class="guest-message">Olá, bom dia.</p>
-                <p class="guest-message">Olá, tudo bem?</p>
-            </div>
+        </aside>
+        <main class="chat-container">
+            <nav class="chat-navbar">
+                <div class="contactinfo-container">
+                    <img class="user-photo" src="img/avatar2.png">
+                    <p class="user-name">Fernanda Couto</p>
+                </div>
+                <ul class="chattools-container">
+                    <li><i class="fas fa-search"></i></li>
+                    <li><i class="fas fa-paperclip"></i></li>
+                    <li><i class="fas fa-ellipsis-v"></i></li>
+                </ul>
+            </nav>
+            <div class="messages-container">
+                <div class="bg-image"></div>
+                <div class="chat-messages">
+                    <p class="guest-message">Olá, bom dia</p>
+                    <p class="user-message">Oi, tudo bem?</p>
+                </div>
             </div>
             <div class="sendmessage-container">
                 <i class="far fa-grin"></i>
                 <input id="chatmessage" type="text" name="message" class="userinput" placeholder="Digite uma mensagem">
                 <i class="fas fa-microphone"></i>
             </div>
-    </main>
+        </main>
     </div>
 </body>
 
